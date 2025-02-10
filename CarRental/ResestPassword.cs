@@ -38,7 +38,7 @@ namespace CarRental
                 return;
             }
 
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "UPDATE Users SET Password = @Password WHERE Address = @Address";
