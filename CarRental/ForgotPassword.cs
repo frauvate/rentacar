@@ -29,7 +29,7 @@ namespace CarRental
                 return;
             }
 
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "SELECT COUNT(*) FROM Users WHERE Address = @Address AND PhoneNum = @PhoneNum";
