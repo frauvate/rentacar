@@ -56,19 +56,17 @@ Run the application.
 ## Usage
 Upon launching the application:
 
-Login: Use the default administrator credentials provided in the setup documentation.
-Dashboard: Access an overview of system statistics.
-Vehicles: Manage the fleet by adding, editing, or removing vehicles.
-Customers: Maintain customer records.
-Rentals: Process new rentals and handle returns.
-Reports: Generate and view various reports.
+- Login: Use the default administrator credentials provided in the setup documentation.
+- Dashboard: Access an overview of system statistics.
+- Vehicles: Manage the fleet by adding, editing, or removing vehicles.
+- Customers: Maintain customer records.
+- Rentals: Process new rentals and handle returns.
+- Reports: Generate and view various reports.
 
 ## Project Structure
-CarRental: Contains the main application code.
-Forms/: Windows Forms for different modules.
-Models/: Data models representing entities.
-Controllers/: Business logic and data handling.
-Views/: UI components and layouts.
+- CarRental: Contains the main application code.
+-- Resources: Contains the assets used in app.
+- Setup: Contains the setup file to install the app.
 
 ## Contributing
 Contributions are wlcomed! To get started:
