@@ -31,7 +31,7 @@ namespace CarRental
             }
 
 
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "INSERT INTO Users (Address, PhoneNum, Password) VALUES (@Address, @PhoneNum, @Password)";
