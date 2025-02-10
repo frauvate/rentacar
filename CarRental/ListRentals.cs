@@ -26,7 +26,7 @@ namespace CarRental
 
         private void LoadRentals()
         {
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             string query = @"
                 SELECT 
                     R.ID,
@@ -94,7 +94,7 @@ namespace CarRental
             FROM Rentals R
             INNER JOIN Cars C ON R.CarID = C.CarID
             WHERE C.Brand + ' ' + C.Model LIKE @SearchText OR R.CustomerName LIKE @SearchText";
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
