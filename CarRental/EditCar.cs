@@ -40,7 +40,7 @@ namespace CarRental
         {
             try
             {
-                string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+                string connectionString = "YOUR SERVER NAME";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
