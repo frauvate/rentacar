@@ -17,7 +17,7 @@ namespace CarRental
         //kullanılabilir durumda olan araçları listeleme
         private void LoadAvailableCars()
         {
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "SELECT CarID AS ID, Brand + ' ' + Model AS CarName FROM Cars WHERE IsInUse = 0 and IsCrashed = 0 and IsClean = 1";
@@ -44,7 +44,7 @@ namespace CarRental
                 return;
             }
 
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
