@@ -64,7 +64,7 @@ namespace CarRental
         {
             try
             {
-                string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+                string connectionString = "YOUR SERVER NAME";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     string query = "SELECT Brand, Model, Year, IsInUse, IsCrashed, IsClean FROM Cars";
@@ -78,7 +78,7 @@ namespace CarRental
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Veriler yüklenirken bir hata oluştu: {ex.Message}");
+                MessageBox.Show($"An error occured while loading the data: {ex.Message}");
             }
         }
 
@@ -88,7 +88,7 @@ namespace CarRental
             string searchText = txtSearch.Text.Trim();
 
             string query = "SELECT Brand, Model, Year, IsInUse, IsCrashed, IsClean FROM Cars WHERE Brand LIKE @SearchText OR Model LIKE @SearchText";
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -156,7 +156,7 @@ namespace CarRental
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+                    string connectionString = "YOUR SERVER NAME";
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         connection.Open();
