@@ -24,7 +24,7 @@ namespace CarRental
 
         private void LoadMaintenanceCars()
         {
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             string query = "SELECT CarID, Brand, Model, Year, IsClean, IsCrashed FROM Cars WHERE IsClean = 0 OR IsCrashed = 1";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -106,7 +106,7 @@ namespace CarRental
 
         private void UpdateCarStatus(int carID, string column, int value)
         {
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             string query = $"UPDATE Cars SET {column} = @Value WHERE CarID = @CarID";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
