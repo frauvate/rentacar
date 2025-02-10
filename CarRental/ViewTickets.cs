@@ -21,7 +21,7 @@ namespace CarRental
 
         private void LoadTickets()
         {
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             string query = "SELECT TicketID, UserName, IssueType, Message, SubmissionDate, IsResolved FROM SupportTickets";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -39,7 +39,7 @@ namespace CarRental
             {
                 int ticketID = Convert.ToInt32(dgvTickets.SelectedRows[0].Cells["TicketID"].Value);
 
-                string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+                string connectionString = "YOUR SERVER NAME";
                 string query = "UPDATE SupportTickets SET IsResolved = 1 WHERE TicketID = @TicketID";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
