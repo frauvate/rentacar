@@ -23,7 +23,7 @@ namespace CarRental
         {
             try
             {
-                string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+                string connectionString = "YOUR SERVER NAME";
                 string query = "SELECT CarID, Brand + ' ' + Model AS CarDetails FROM Cars WHERE IsInUse = 1 ";
                 DataTable dt = new DataTable();
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -52,7 +52,7 @@ namespace CarRental
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             if (cmbRentedCars.SelectedValue != null)
             {
                 int carID = Convert.ToInt32(cmbRentedCars.SelectedValue);
