@@ -69,13 +69,13 @@ Upon launching the application:
 - Setup: Contains the setup file to install the app.
 
 ## Contributing
-Contributions are wlcomed! To get started:
+Contributions are welcomed! To get started:
 
-Fork the repository.
-Create a new branch: git checkout -b feature-name.
-Make your changes and commit them: git commit -m 'Add new feature'.
-Push to the branch: git push origin feature-name.
-Open a Pull Request.
+- Fork the repository.
+- Create a new branch: git checkout -b feature-name.
+- Make your changes and commit them: git commit -m 'Add new feature'.
+- Push to the branch: git push origin feature-name.
+- Open a Pull Request.
 
 Please ensure your code adheres to general coding standards and includes appropriate tests.
 
