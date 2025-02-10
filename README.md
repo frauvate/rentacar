@@ -13,11 +13,11 @@ Welcome to the Car Rental Management System repository. This application is desi
 
 
 ## Features
-Vehicle Management: Add, update, and remove vehicles from the inventory.
-Customer Management: Manage customer information efficiently.
-Rental Transactions: Handle rental bookings, returns, and track rental history.
-User Authentication: Secure login system with role-based access control.
-Reporting: Generate reports on rentals, returns, and vehicle availability.
+- Vehicle Management: Add, update, and remove vehicles from the inventory.
+- Customer Management: Manage customer information efficiently.
+- Rental Transactions: Handle rental bookings, returns, and track rental history.
+- User Authentication: Secure login system with role-based access control.
+- Reporting: Generate reports on rentals, returns, and vehicle availability.
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
