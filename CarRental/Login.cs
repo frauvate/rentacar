@@ -19,7 +19,7 @@ namespace CarRental
             InitializeComponent();
 
             //veri tabanı bağlantısı için kullanılan yol
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             TestDatabaseConnection(connectionString);
 
         }
@@ -67,7 +67,7 @@ namespace CarRental
         //kullanıcıyı doğrulayan fonksiyon
         private bool ValidateUser(string username, string password)
         {
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "SELECT COUNT(*) FROM Users WHERE Address = @username AND Password = @password";
