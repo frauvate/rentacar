@@ -44,7 +44,7 @@ namespace CarRental
 
 
             //veritabanına ekleme işlemi
-            string connectionString = "Server=esma-laptop\\sqlexpress;Database=CarRental;Integrated Security=True;";
+            string connectionString = "YOUR SERVER NAME";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "INSERT INTO Cars (Brand, Model, Year, IsInUse, IsCrashed, IsClean) " +
