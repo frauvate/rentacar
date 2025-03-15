@@ -27,28 +27,30 @@ Before you begin, ensure you have the following installed:
 - DevExpress Components
 
 ## Installation
-- Clone the Repository:
+1. Clone the Repository:
 
+ ```
 git clone https://github.com/frauvate/rentacar.git
 cd rentacar
+ ```
 
-- Open the Solution:
+2. Open the Solution:
 
 Launch Visual Studio.
 Open the CarRentalManagementSystem.sln solution file.
 
-- Restore NuGet Packages:
+3. Restore NuGet Packages:
 
 In Visual Studio, navigate to Tools > NuGet Package Manager > Manage NuGet Packages for Solution.
 Restore any missing packages.
 
-- Configure the Database:
+4. Configure the Database:
 
 Update the connection string in App.config to point to your SQL Server instance.
 Run the provided SQL script located in the Setup directory to set up the database schema. 
 At this step you also need to change the necessary parts in the code to your connection string.
 
-- Build and Run:
+5. Build and Run:
 
 Build the solution to ensure all dependencies are correctly configured.
 Run the application.
